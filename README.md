@@ -1,12 +1,12 @@
 # Chest X-Ray Detection
 
-A small, reproducible machine-learning project based on the files in this folder. It trains and evaluates traditional classifiers on the provided labeled, flattened 28×28 grayscale feature table and optionally serves a Streamlit upload demo.
+A small, reproducible machine-learning project based on the datasets of 4 class labels. It trains and evaluates traditional classifiers on the provided labeled, flattened 28×28 grayscale feature table and optionally serves a Streamlit upload demo.
 
 > **Research/education only.** This model is not a medical device, has not been clinically validated, and must not be used to diagnose or treat anyone. A prediction is not a substitute for review by a qualified clinician.
 
 ## Dataset included in this project
 
-The report lists 3,500 Normal, 3,875 Pneumonia, 700 Tuberculosis, and 3,616 COVID images. These counts total **11,691**, rather than 11,700. The default `lbddataset.csv` contains 784 feature columns (`D1`…`D784`) and a `DISEASE` target column. The code reads labels from that target column and normalizes `TB`/`TUBERCULOSIS` and common COVID label variants. A 2023 ChatGPT conversation about this project confirms that you were experimenting with an SVM on CSV features, an 80/20 split with `random_state=42`, and classification metrics. Accordingly, linear SVM is included in the model comparison.
+The report lists 3,500 Normal, 3,875 Pneumonia, 700 Tuberculosis, and 3,616 COVID images. These counts total **11,691**, rather than 11,700. The default `lbddataset.csv` contains 784 feature columns (`D1`…`D784`) and a `DISEASE` target column. The code reads labels from that target column and normalizes `TB`/`TUBERCULOSIS` and common COVID label variants. Approximately,six different ML models were experimenting on CSV features, an 80/20 split with `random_state=42`, and classification metrics.
 
 Other CSVs in the folder are alternate resolutions, class-specific exports, or binary datasets. They are not automatically combined. To choose a different compatible labeled table, pass its path to `--data`; it must contain one row per sample, numeric feature columns, and a label column.
 
