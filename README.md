@@ -1,6 +1,6 @@
 # Chest X-Ray Detection
 
-A small, reproducible machine-learning project based on the datasets of 4 class labels. It trains and evaluates traditional classifiers on the provided labeled, flattened 28×28 grayscale feature table and optionally serves a Streamlit upload demo.
+A small, reproducible machine-learning project based on the datasets of 4 class labels. It trains and evaluates traditional classifiers on the dimensionality reduced, labeled, flattened 28×28 grayscale feature table and optionally serves a Streamlit upload demo.
 
 > **Research/education only.** This model is not a medical device, has not been clinically validated, and must not be used to diagnose or treat anyone. A prediction is not a substitute for review by a qualified clinician.
 
