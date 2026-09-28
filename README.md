@@ -1,4 +1,4 @@
-# Chest X-ray disease classification
+# Chest X-Ray Detection
 
 A small, reproducible machine-learning project based on the files in this folder. It trains and evaluates traditional classifiers on the provided labeled, flattened 28×28 grayscale feature table and optionally serves a Streamlit upload demo.
 
