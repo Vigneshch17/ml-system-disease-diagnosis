@@ -9,8 +9,8 @@ from src.data import image_to_features
 from src.predict import load_bundle, predict_features
 
 
-st.set_page_config(page_title="Chest X-Ray detection", page_icon="🩻")
-st.title("Chest X-Ray detection")
+st.set_page_config(page_title="Chest X-Ray Detection", page_icon="🩻")
+st.title("Chest X-Ray Detection")
 st.warning(
     "Educational research demo only. This model is not clinically validated and must not "
     "be used to make medical decisions. Consult a qualified healthcare professional."
