@@ -9,8 +9,8 @@ from src.data import image_to_features
 from src.predict import load_bundle, predict_features
 
 
-st.set_page_config(page_title="Chest X-ray classifier", page_icon="🩻")
-st.title("Chest X-ray disease classification")
+st.set_page_config(page_title="Chest X-Ray detection", page_icon="🩻")
+st.title("Chest X-Ray detection")
 st.warning(
     "Educational research demo only. This model is not clinically validated and must not "
     "be used to make medical decisions. Consult a qualified healthcare professional."
@@ -36,4 +36,3 @@ if uploaded:
         st.caption(f"Classifier: {bundle['model_name']}")
     except Exception as error:
         st.error(f"Could not run prediction: {error}")
-
